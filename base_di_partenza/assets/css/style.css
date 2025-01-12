@@ -8,6 +8,10 @@ html {
 }
 a {
     text-decoration: none;
+    color: black;
+}
+a:hover, button:hover, .bookMark:hover {
+    cursor: pointer;
 }
 /* Nav Bar*/
 
@@ -37,11 +41,17 @@ nav, .hero {
 .navItems button {
     font-size: 1em;
 }
+.navItems button:active, header button:active {
+    background-color: rgba(108, 107, 107, 0.601);
+    border: none;
+    color: black;
+}
 .navItems button, header button {
     color: white;
     background-color: black;
     border-radius: 20px;
-    padding: 8px 17px;
+    padding: 10px 17px;
+    border: none;
 }
 
 /* Scroll Nav bar effects class */
@@ -174,6 +184,9 @@ section h3{
 }
 .secContainer, .sideArgs {
     border-bottom: 1px solid rgb(205, 205, 205);
+}
+.artContent>p:last-of-type:hover, .artCard h3:hover {
+    text-decoration: underline;
 }
 
 /* Aside */
