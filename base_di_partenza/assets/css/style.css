@@ -13,6 +13,7 @@ a {
 a:hover, button:hover, .bookMark:hover {
     cursor: pointer;
 }
+
 /* Nav Bar*/
 
 #navContainer, header {
@@ -55,6 +56,7 @@ nav, .hero {
 }
 
 /* Scroll Nav bar effects class */
+
 .scrolledNavBar {
     background-color: white !important;
     transition: background-color 0.3s ease;
@@ -63,6 +65,7 @@ nav, .hero {
     background-color: #1a8917 !important;
     transition: background-color 0.3s ease;
 }
+
 /* Header */
 
 header {
@@ -248,6 +251,12 @@ aside {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+/*
+.sideArt {
+    position: sticky;
+    top: 0px 
+}
+    */
 .sideArgs {
     padding-top: 1rem;
     padding-bottom: 2rem;

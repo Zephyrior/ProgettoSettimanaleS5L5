@@ -14,3 +14,20 @@ window.addEventListener("scroll", function() {
         navButtonScrolled.classList.remove("scrolledButton");
     }
 });
+
+
+// JS sticky Side Bar
+/* document.addEventListener("scroll", function() {
+    const navBar = document.getElementById("navContainer");
+    const sideBar = document.querySelector(".sideArt");
+    const navBarHeight = navBar.offsetHeight;
+    const sideBarPosition = sideBar.getBoundingClientRect().top;
+    const viewportTop = window.scrollY;
+    if (sideBarPosition <= navBarHeight) {
+        navBar.style.position = "absolute";
+        navBar.style.top = `${viewportTop + sideBarPosition - navBarHeight}`;
+    } else {
+        navBar.style.position = "sticky";
+        navBar.style.top = "0";
+    }
+}); */
