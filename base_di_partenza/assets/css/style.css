@@ -256,7 +256,7 @@ aside {
     border: solid 1px rgb(168, 164, 164);
     padding: 10px 15px;
     margin: 3px;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 .sideItems li a, .footItems li a {
     text-decoration: none;
@@ -265,7 +265,7 @@ aside {
 footer .footItems li {
     display: inline-block;
     margin: 10px;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 footer{
     padding-block: 1rem;
