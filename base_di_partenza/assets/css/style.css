@@ -256,6 +256,7 @@ aside {
     position: sticky;
     top: 0px 
 }
+    - non rende la sua funzione
     */
 .sideArgs {
     padding-top: 1rem;
@@ -272,6 +273,13 @@ aside {
     text-decoration: none;
     color: gray;
 }
+/*
+.sideItems li:hover, .sideItems li a:hover {
+    background-color: rgb(179, 179, 179);
+    color: white;
+} 
+    -rimosso perché non ho avuto tempo a migliorarlo.
+    */ 
 footer .footItems li {
     display: inline-block;
     margin: 10px;
