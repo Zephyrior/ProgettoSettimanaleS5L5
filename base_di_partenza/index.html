@@ -1,31 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--aggiungi link al reset.css -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
-</head>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Medium</title>
+  </head>
 
-<body>
-<nav>
-    <img src="./assets/imgs/svg/logo.svg">
-    <ul>
-        <li>Our Story</li>
-        <li>Membership</li>
-        <li>Write</li>
-        <li>Sign In</li>
-        <li><button>Get Started</button></li>
-    </ul>
-</nav>
+  <body>
+    <div id="navContainer">
+      <nav>
+        <img src="./assets/imgs/svg/logo.svg" alt="Medium Logo"/>
+        <ul class="navItems">
+          <li>Our story</li>
+          <li>Membership</li>
+          <li>Write</li>
+          <li>Sign In</li>
+          <li><button id="navButton">Get Started</button></li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <div class="hero">
+        <div class="headerTextContent">
+          <h1>Stay curious.</h1>
+          <p>
+            Discover stories, thinking, and expertise
+            <br />
+            from writers on any topic.
+          </p>
+          <button>Start reading</button>
+        </div>
+        <img class="matrix" src="./assets/imgs/svg/Mimage.svg" />
+      </div>
+    </header>
+    <div class="secContainer">
+      <section>
+        <div class="headerContainer">
+          <img src="./assets/imgs/svg/trending.svg" alt="trend"/>
+          <h3>Trending on medium</h3>
+        </div>
+        <div class="cardContainer">
+          <div class="card">
+            <p class="artNumb">01</p>
+            <div class="artContent">
+              <div class="iconAuthor">
+                <img class="icon" src="./assets/imgs/image01.jpeg" alt="Cooper"/>
+                <p class="author">Tom Cooper</p>
+              </div>
+              <p>Ukraine War, 23 October 2022</p>
+              <div class="artFoot">
+                <p>Oct 23</p>
+                <span class="dotSeparator">•</span>
+                <p>5 min read</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <p class="artNumb">02</p>
+            <div class="artContent">
+              <div class="iconAuthor">
+                <img class="icon" src="./assets/imgs/image02.png" alt="Hayes"/>
+                <p class="author">
+                  Arthur Hayes <span class="grey">in</span> Entrepreneur's
+                  Handbook
+                </p>
+              </div>
+              <p>Comeback</p>
+              <div class="artFoot">
+                <p>Oct 26</p>
+                <span class="dotSeparator">•</span>
+                <p>24 min read</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <p class="artNumb">03</p>
+            <div class="artContent">
+              <div class="iconAuthor">
+                <img class="icon" src="./assets/imgs/image03.jpeg" alt="Cooper"/>
+                <p class="author">
+                  Erin A Ross <span class="grey">in</span> Slackjaw
+                </p>
+              </div>
+              <p>
+                How I Learned to Love My Breasts Even Though One Is A Horcrux
+                For Voldemort
+              </p>
+              <div class="artFoot">
+                <p>Oct 26</p>
+                <span class="dotSeparator">•</span>
+                <p>2 min read</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <p class="artNumb">04</p>
+            <div class="artContent">
+              <div class="iconAuthor">
+                <img class="icon" src="./assets/imgs/image04.png" alt="Mastropolo"/>
+                <p class="author">
+                  Frank Mastropolo <span class="grey">in</span> The Riff
+                </p>
+              </div>
+              <p>The Night Paul McCartney Donned a Disguise at Fillmore East</p>
+              <div class="artFoot">
+                <p>Oct 22</p>
+                <span class="dotSeparator">•</span>
+                <p>3 min read</p>
+                <img class="star" src="./assets/imgs/svg/star.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <p class="artNumb">05</p>
+            <div class="artContent">
+              <div class="iconAuthor">
+                <img class="icon" src="./assets/imgs/image05.jpeg" alt="Andrade"/>
+                <p class="author">
+                  Frank Andrade <span class="grey">in</span> Towards Data
+                  Science
+                </p>
+              </div>
+              <p>
+                5 Python Projects to Automate Your Life:<br />From Beginner to
+                Advanced
+              </p>
+              <div class="artFoot">
+                <p>Oct 13</p>
+                <span class="dotSeparator">•</span>
+                <p>6 min read</p>
+                <img class="star" src="./assets/imgs/svg/star.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <p class="artNumb">06</p>
+            <div class="artContent">
+              <div class="iconAuthor">
+                <img class="icon" src="./assets/imgs/image06.png" alt="Smits"/>
+                <p class="author">
+                  Wesley Smits <span class="grey">in</span> Javascript in Plain
+                  English
+                </p>
+              </div>
+              <p>How To Make Visual Studio Code Look Amazing</p>
+              <div class="artFoot">
+                <p>Oct 20</p>
+                <span class="dotSeparator">•</span>
+                <p>7 min read</p>
+                <img class="star" src="./assets/imgs/svg/star.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <aside>
+      <div class="contArt">
+        <div class="asideArtCont">
+          <div class="artCard">
+            <img src="./assets/imgs/image07.jpeg" alt="Britt"/>
+            <p>Robert Roy Britt</p>
+            <h3>How Old is Old</h3>
+            <p>
+              What we consider “old” changes dramatically with age, and our
+              perspectives can be predictive of how well we age
+            </p>
+            <div class="artFoot">
+              <p>
+                Oct 27 • 5 min read • <span class="highlight">Aging</span>
+                <span><img src="./assets/imgs/svg/star.svg" /></span>
+              </p>
+              <img src="./assets/imgs/svg/bookmark.svg" />
+            </div>
+          </div>
+          <div class="sideImg">
+            <img src="./assets/imgs/image08.jpeg" alt="family"/>
+          </div>
+        </div>
+        <div class="asideArtCont">
+          <div class="artCard">
+            <img src="./assets/imgs/image09.jpeg" alt="Liikanen"/>
+            <p>Taru Anniina Liikanen</p>
+            <h3>Is Taylor Swift Allowed to Speak About Fat?</h3>
+            <p>
+              Can you speak about your trauma if you don't look traumatized?
+            </p>
+            <div class="artFoot">
+              <p>
+                oct 24 • 6 min read • <span class="highlight">Health</span>
+                <span><img src="./assets/imgs/svg/star.svg" /></span>
+              </p>
+              <img src="./assets/imgs/svg/bookmark.svg" />
+            </div>
+          </div>
+          <div class="sideImg">
+            <img src="./assets/imgs/image10.jpeg" alt="Taylor Swift"/>
+          </div>
+        </div>
+        <div class="asideArtCont">
+          <div class="artCard">
+            <img src="./assets/imgs/image11.jpeg" alt="Rodenas"/>
+            <p>David Rodenas, Ph. D.</p>
+            <h3>Don't Screw Up, You Will Be Found Guilty</h3>
+            <p>
+              Software Engineer, yours is the right to produce high-quality work
+              at all times, also the liability.
+            </p>
+            <div class="artFoot">
+              <p>
+                Oct 14 • </p> <p>5 min read •</p>
+                <span class="highlight">Software Engineering</span>
+                <span><img src="./assets/imgs/svg/star.svg" /></span>
+              
+              <img src="./assets/imgs/svg/bookmark.svg" />
+            </div>
+          </div>
+          <div class="sideImg">
+            <img src="./assets/imgs/image12.png" alt="Software Engineer"/>
+          </div>
+        </div>
+        <div class="asideArtCont">
+          <div class="artCard">
+            <img src="./assets/imgs/image13.png" alt="Microsoft Design"/>
+            <p>Microsoft Design</p>
+            <h3>Leave No Trace</h3>
+            <p>
+              How product designers can break from the status quo and help our
+              planet
+            </p>
+            <div class="artFoot">
+              <p>
+                Oct 25 • 11 min read •
+                <span class="highlight">Sustainability</span>
+                <span><img src="./assets/imgs/svg/star.svg" /></span>
+              </p>
+              <img src="./assets/imgs/svg/bookmark.svg" />
+            </div>
+          </div>
+          <div class="sideImg">
+            <img src="./assets/imgs/image14.png" alt="Forest"/>
+          </div>
+        </div>
+        <div class="asideArtCont">
+          <div class="artCard">
+            <img src="./assets/imgs/image15.jpeg" alt="Young"/>
+            <p>Scott H. Young</p>
+            <h3>Variability, Not Repetition, is the Key to Mastery</h3>
+            <p>
+              Bruce Lee is reported to have said, “I fear not the man who has
+              practiced 10,000 kicks once, but the man who has practiced one
+              kick 10,000...
+            </p>
+            <div class="artFoot">
+              <p>
+                Oct 26 • 7 min read • <span class="highlight">Health</span>
+                <span><img src="./assets/imgs/svg/star.svg" /></span>
+              </p>
+              <img src="./assets/imgs/svg/bookmark.svg" />
+            </div>
+          </div>
+          <div class="sideImg">
+            <img src="./assets/imgs/image16.jpg" alt="Bruce Lee"/>
+          </div>
+        </div>
+        <div class="asideArtCont">
+          <div class="artCard">
+            <img src="./assets/imgs/image17.png" alt="De Stefano"/>
+            <p>Paul A. DeStefano <span class="grey">in</span> Human Parts</p>
+            <h3>What I Overheard as an Escape Room Actor</h3>
+            <p>
+              Lock a group of people in a room and you'll witness some
+              surprising confessions
+            </p>
+            <div class="artFoot">
+              <p>
+                Jan 18, 2020 • 6 min read •
+                <span class="highlight">Experiences</span>
+                <span><img src="./assets/imgs/svg/star.svg" /></span>
+              </p>
+              <img src="./assets/imgs/svg/bookmark.svg" />
+            </div>
+          </div>
+          <div class="sideImg">
+            <img src="./assets/imgs/image18.jpeg" alt="Escape Room"/>
+          </div>
+        </div>
+        <div class="asideArtCont">
+          <div class="artCard">
+            <img src="./assets/imgs/image19.jpeg" alt="Scott"/>
+            <p>Kim Scott</p>
+            <h3>
+              6 Steps for Setting Measurable Goals to Avoid “Productivity
+              Paranoia”
+            </h3>
+            <p>
+              With more people working in remote and hybrid environments than
+              ever before, company, team and individual goals must be explicit
+              and…
+            </p>
+            <div class="artFoot">
+              <p>
+                Oct 24 • 6 min read • <span class="highlight">Health</span>
+                <span><img src="./assets/imgs/svg/star.svg" /></span>
+              </p>
+              <img src="./assets/imgs/svg/bookmark.svg" />
+            </div>
+          </div>
+          <div class="sideImg">
+            <img src="./assets/imgs/image20.jpg" alt="Work Productivity"/>
+          </div>
+        </div>
+      </div>
 
-  
-
-
-</body>
-
+      <div class="sideArt">
+        <h4>Discover more of what matters to you</h4>
+        <div class="sideArgs">
+          <ul class="sideItems">
+            <li><a href="#">Programming</a></li>
+            <li><a href="#">Data Science</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Self Improvement</a></li>
+            <li><a href="#">Writing</a></li>
+            <li><a href="#">Relationship</a></li>
+            <li><a href="#">Machine Learning</a></li>
+            <li><a href="#">Productivity</a></li>
+            <li><a href="#">Politics</a></li>
+          </ul>
+        </div>
+        <footer>
+          <ul class="footItems">
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Writers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Knowable</a></li>
+          </ul>
+        </footer>
+      </div>
+    </aside>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
