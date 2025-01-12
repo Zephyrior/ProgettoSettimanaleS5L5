@@ -29,7 +29,7 @@ nav, .hero {
     display: flex;
     align-content: center;
     justify-content: space-between;
-    width: 80%;
+    width: 75%;
     margin: auto;
     padding-block: 1rem;
 }
@@ -46,7 +46,7 @@ nav, .hero {
     border: none;
     color: black;
 }
-.navItems button, header button {
+.navItems #navButton, header button {
     color: white;
     background-color: black;
     border-radius: 20px;
@@ -101,7 +101,7 @@ header button {
 
 section {
     overflow: hidden;
-    width: 80%;
+    width: 75%;
     margin: auto;
     padding-block: 2rem;
 }
@@ -192,7 +192,7 @@ section h3{
 /* Aside */
 
 aside {
-    width: 80%;
+    width: 75%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -220,6 +220,7 @@ aside {
 }
 .sideImg img {
     max-height: 20vh;
+    
 }
 .artFoot .highlight {
     background-color: rgba(204, 203, 203, 0.311);
@@ -273,7 +274,7 @@ footer{
 
 /* Break Points*/
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 550px) {
     nav, .hero, section, aside {
         width: 90%;
         margin: auto;
@@ -292,10 +293,14 @@ footer{
         padding-inline:  40px;
     }
 } 
-@media screen and (max-width: 720px) { 
-    .card {
-        max-width: 100%;        
+
+@media screen and (max-width: 690px) {
+    .sideImg img {
+        max-height: 15vh;   
     }
+}
+
+@media screen and (max-width: 740px) {
     .artContent .artFoot {
         justify-content: space-between;
     }
@@ -313,15 +318,16 @@ footer{
         padding-right: 0;
         order: 2;
     }
-}
-@media screen and (max-width: 950px) {
-    .matrix {
+    .card {
+        max-width: 100%;        
+    }
+    .navItems li:nth-child(-n+3) {
         display: none;
     }
     
 } 
-@media screen and (max-width: 700px) {
-    .navItems li:nth-child(-n+3) {
+@media screen and (max-width: 980px) {
+    .matrix {
         display: none;
     }
     
@@ -340,7 +346,7 @@ footer{
         margin-inline: 10px;
     }
 }
-@media screen and (min-width: 1063px) {
+@media screen and (min-width: 1134px) {
     .cardContainer .card:nth-child(n+3):nth-child(-n+6) img{
         border-radius: 20%;
     }
